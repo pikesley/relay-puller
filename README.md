@@ -6,8 +6,6 @@
 
 | Pi (physical) | Arduino |
 |--------------:|---------|
-| 2 | VIn (POWER) |
-| 6 | GND (POWER) |
 | 31 | 10 |
 | 33 | 8 |
 
