@@ -4,10 +4,10 @@
 
 [Treasure Map](https://pinout.xyz/)
 
-| Pi (physical) | Arduino |
-|--------------:|---------|
-| 31 | 10 |
-| 33 | 8 |
+| Pi (physical) | Pi (logical) | Arduino |
+|--------------:|-------------:|---------|
+| 31 | 6 | 10 |
+| 33 | 13 | 8 |
 
 | Arduino | Relay |
 |--------:|-------|
