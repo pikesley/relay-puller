@@ -14,5 +14,3 @@ void loop() {
     digitalWrite(relays[v], digitalRead(inputs[v])); 
   }
 }
-
-
