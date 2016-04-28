@@ -13,16 +13,28 @@ int value1 = 0;
 int value2 = 0;
 int value3 = 0;
 
+/*int relays[] = { 4, 5, 6, 7 };
+int inputs[] = { 8, 9, 10, 11 };
+int values[] = { 0, 0, 0, 0 };*/
+
 void setup() {
   pinMode(relayPin0, OUTPUT);
   pinMode(relayPin1, OUTPUT);
   pinMode(relayPin2, OUTPUT);
   pinMode(relayPin3, OUTPUT);
+
+  /*for (int r = 0; r < sizeof(relays); r++) {
+    pinMode(relays[r], OUTPUT);
+  }*/
   
   pinMode(driverPin0, INPUT);
   pinMode(driverPin1, INPUT);
   pinMode(driverPin2, INPUT);
   pinMode(driverPin3, INPUT);
+
+  /*for (int i = 0; i < sizeof(inputs); i++) {
+    pinMode(inputs[i], INPUT);
+  }*/
 }
 
 void loop() {
@@ -30,6 +42,27 @@ void loop() {
   value1 = digitalRead(driverPin1);
   value2 = digitalRead(driverPin2);
   value3 = digitalRead(driverPin3);
+
+  /*for (int v = 0; v < sizeof(values); v++) {
+    int z = digitalRead(inputs[v]);
+    if (z == HIGH) {
+      digitalWrite(relays[v], HIGH);
+    }
+
+    if (z == LOW) {
+      digitalWrite(relays[v], LOW);
+    }
+  }*/
+
+  /*for (int v = 0; v < sizeof(values); v++) {
+    if(values[v] == HIGH) {
+      digitalWrite(relays[v], HIGH);
+    }
+
+    if(values[v] == LOW) {
+      digitalWrite(relays[v], LOW);
+    }
+  }*/
   
   if(value0 == HIGH) {
     digitalWrite(relayPin0, HIGH);
